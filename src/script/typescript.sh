@@ -1,1 +1,1 @@
-yarn add @@types/node typescript ts-node -D
+yarn add @types/node typescript ts-node -D

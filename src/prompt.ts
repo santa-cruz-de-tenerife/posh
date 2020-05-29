@@ -9,7 +9,7 @@ import * as prompts from "prompts";
  */
 import { script } from "./script.json";
 
-export const prompt = async () => {
+export const prompt = async (): Promise<any> => {
   const response = await prompts({
     type: "autocomplete",
     name: "value",
