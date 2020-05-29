@@ -7,6 +7,8 @@ import { run } from "./run";
 
 (async () => {
   const response: any = await prompt();
-  console.log("==> Installing", response.value);
-  run(response.run);
+  if(response){
+    console.log("==> Installing", response.value);
+    run(response.run);
+  }
 })();
