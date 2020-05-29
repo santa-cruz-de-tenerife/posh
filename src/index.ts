@@ -1,12 +1,11 @@
 /**
- * External dependencies
- */
-
-/**
  * Internal dependencies
  */
 import { prompt } from "./prompt";
+import { run } from "./run";
 
 (async() => {
-  await prompt();
+  const response = await prompt();
+  console.log("==> Installing", response.value);
+  run(response.value);
 })();
