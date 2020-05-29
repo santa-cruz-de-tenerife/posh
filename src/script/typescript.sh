@@ -1,4 +1,1 @@
-#!/bin/bash
-
-yarn add react react-dom react-router-dom
-yarn add @types/react @types/react-dom @types/react-router-dom -D
+yarn add @@types/node typescript ts-node -D
