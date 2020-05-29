@@ -17,5 +17,5 @@ export const prompt = async () => {
       ...script
     ],
   });
-  console.log("==> Installing", response);
+  return response;
 };
