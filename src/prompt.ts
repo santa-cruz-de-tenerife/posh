@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 /**
  * External dependencies
  */
@@ -17,5 +18,5 @@ export const prompt = async () => {
       ...script
     ],
   });
-  return response;
+  return script.find(s => s.value === response.value);
 };

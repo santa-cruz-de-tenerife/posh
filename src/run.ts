@@ -1,11 +1,9 @@
+#!/usr/bin/env node
 /**
  * External dependencies
  */
 import * as shelljs from "shelljs";
-import * as path from "path";
-import * as appRoot from "app-root-path";
 
-export const run = (kind: string) => {
-  const scriptPath = path.join(appRoot.path, "src", "script", `${kind}`);
-  shelljs.exec(scriptPath);
+export const run = async (script: string[]) => {
+  await Promise.all(script.map(async s => shelljs.exec(s)));
 }
