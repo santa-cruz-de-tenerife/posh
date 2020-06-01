@@ -14,4 +14,4 @@ export const option = () => {
     .default("s", "origin")
     .help()
     .argv;
-}
+};
