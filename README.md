@@ -1,12 +1,10 @@
 ## Installation
----
 Configuring Your [.npmrc](https://docs.npmjs.com/configuring-npm/npmrc.html)
 ```
 @santa-cruz-de-tenerife:registry=https://npm.pkg.github.com/
 ```
 
 ## Usage
----
 per-user config file (~/.npmrc)
 ```
 npx @santa-cruz-de-tenerife/posh
